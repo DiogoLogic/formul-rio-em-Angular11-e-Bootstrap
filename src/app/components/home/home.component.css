@@ -1,0 +1,106 @@
+
+@keyframes bounce{
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+        
+}
+
+.imgIntro{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:12%;
+    width: auto;
+    height:auto ;
+    max-width: 340px;
+   
+
+
+}
+
+
+
+.title{
+    font-family: 'FontTitle';
+    margin-top: 1%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.sub-title{
+    font-family: 'FontLight';
+    text-align: center;
+    font-size: 16px;
+    margin-top: -18px;
+    
+
+}
+
+.colorir{
+    color: #14e2cd;
+    
+}
+
+.button{
+   
+   
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    max-height: 499px;
+    width: 225px;
+    height: 82px;
+    border-radius: 6px;
+    margin-top: 25px;
+    display: block;
+    font-family: 'FontTitle';
+    font-size: 24px;
+    cursor: pointer;
+    background: linear-gradient(
+        90deg,
+        rgb(32, 223, 223) 0%,
+        rgb(86, 175, 216) 35%,
+        rgb(117, 88, 196) 100%
+      );
+    color: aliceblue;
+    border: 0pt;
+  
+}
+.button:hover{
+    background: #14e2cd;
+}
+
+.button:hover{
+    animation: bounce 1s;
+}
+  
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+

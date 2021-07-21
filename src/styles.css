@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'FontTitle';
+    src: url(../src/assets/fonts/GothamRounded-Bold.otf);
+}
+
+@font-face {
+    font-family: 'FontLight';
+    src: url(../src/assets/fonts/GothamRounded-Light.otf);
+}
+
+
+
+body{
+    background-color: #3d3933;
+    color: #fff;
+    height:100%;
+    width:100%;
+  
+}
+ 
+@media screen and (max-width: 100%){
+    .card1{
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

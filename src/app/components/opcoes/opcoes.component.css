@@ -1,0 +1,71 @@
+
+
+
+.contador{
+    font-family: 'FontTitle';
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;  
+   
+   
+}
+.container_screen{
+   width: 100%;
+   padding-left: 20%;
+  
+}
+.anterior{
+    color: rgb(255, 255, 255);
+    margin-left: -90%;
+    font-family: 'FontTitle';
+    margin-top: 30%;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.card-cont{
+  margin-top: 24%;
+  margin-left: 7%;
+  margin-right: auto;
+
+}
+
+.card-title{
+    font-family: 'FontTitle';    
+}
+
+.grid{
+    display: inline-block;
+
+}
+.card1{
+    float: left;
+   margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    margin-top: 2%;   
+}
+
+.card1:hover{
+    background-color: rgba(255, 255, 255, 0.226);
+    transition: 1s;
+    transform:scale(1.1) ;
+    border-radius: 25px;
+}
+
+
+.title{
+    font-family: 'FontTitle';
+    text-align: center;
+    margin-top: 142px;
+    font-size: 32px;
+    display: block;
+  
+}
+
+.card:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(243, 241, 241, 0);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(255, 255, 255, 0);
+    box-shadow: -1px 9px 40px -12px rgba(255, 245, 245, 0.068); ;
+   
+}

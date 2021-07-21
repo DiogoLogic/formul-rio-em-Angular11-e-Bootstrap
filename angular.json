@@ -1,5 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "ae865015-d21d-43f8-9d9c-21d27183ee83"
+  },
+  
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -7,8 +11,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "inlineTemplate": true,
-          "inlineStyle": true,
+          "inlineTemplate": false,
+          "inlineStyle": false,
           "skipTests": true
         },
         "@schematics/angular:class": {
@@ -42,6 +46,7 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+          
           "options": {
             "outputPath": "dist/form-app",
             "index": "src/index.html",
@@ -52,7 +57,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ],
+              ],
+          
             "styles": [
               "src/styles.css"
             ],

@@ -1,0 +1,50 @@
+<div style="margin-top: 2%;">
+    <span class="contador" style="margin-left: 50%;">{{ pagina }}/10</span>
+    <span class="contador" style="margin-left: 36%;">{{ valorTotal | currency: 'BRL' }}</span>
+    <a (click)=" goBack()" class="anterior">← Início</a>
+</div>
+
+
+<div>
+    <h1 class="title">{{ questionsAtual?.title }}</h1>
+</div>
+
+
+<div *ngIf="pagina >= 0 && pagina < 10" class="container_screen">
+    <div *ngFor="let answer of questionsAtual?.answers">
+
+        <div class="card1">
+            <div>
+                <a (click)="calcularValor(answer.cost ); loadQuestions()" style="color: rgb(255, 255, 255);">
+                    <div class="container-fluid grid">
+                        <div class="row flex-nowrap">
+                            <div class="col-md-20" class=" hover-shadow" alt="#">
+                                <div class="card1"
+                                    style="   width: 15em; margin-top: -6px; height: 14em; background-color: rgba(255, 255, 255, 0)">
+                                    <img [src]="answer.image"
+                                        style="width: 9em;  margin-top: 7%; display: block; margin-left: auto; margin-right: auto"
+                                        class="card-img-top" alt="card 1">
+                                    <div class="card-bory">
+                                        <h5 style="margin-top: 10px; text-align: center; font-size: 18px;"
+                                            class="card-title">{{ answer?.title }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: -4%;">
+    <app-resultado *ngIf="pagina == 10" [receberFinal]="resultFinal"></app-resultado>
+</div>
+
+<div style="margin-left:84%; margin-top: 34%; display:block">
+    <a href="https://pt.yeeply.com/?utm_source=CCMA-BR&utm_medium=logo&utm_campaign=microsites"><img
+            src="../../../assets/footer.png"></a>
+</div>
+
+
